@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.Magento.TestCases.IconesAreDisplayed">
+        <methods>
+          <include name="verifyingGearIconeIsDispalyed"/>
+          <include name="verifyingMenIconeIsDisplayed"/>
+          <include name="verifyingSaleIconeIsdisplayed"/>
+          <include name="verifyingWomenIconIsDisplayed"/>
+          <include name="verifyingWhatsNewIconIsDisplayed"/>
+          <include name="registerSetup"/>
+          <include name="tearDown"/>
+          <include name="verifyingTrainingIconeIsDisplayed"/>
+        </methods>
+      </class> <!-- com.Magento.TestCases.IconesAreDisplayed -->
+      <class name="com.Magento.TestCases.LoginTest">
+        <methods>
+          <include name="loginSetup"/>
+          <include name="verifyingSigningWithExistingCredentials"/>
+          <include name="verifyingSigningWithInvalidEmail"/>
+          <include name="verifyingSigninWithInvalidPassword"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.Magento.TestCases.LoginTest -->
+      <class name="com.Magento.TestCases.RegisterTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyingRegisterWithoutAnyCredentials"/>
+          <include name="verifyingRegisterWithUnmatchConfirmPassword"/>
+          <include name="registerSetup"/>
+          <include name="verifyingRegisterWithExistingEmail"/>
+          <include name="verifyingRegisterWithCorrectCredentials"/>
+        </methods>
+      </class> <!-- com.Magento.TestCases.RegisterTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
